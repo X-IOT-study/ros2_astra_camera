@@ -221,17 +221,17 @@ install(TARGETS ${PROJECT_NAME}
 
 
 install(FILES openni2_redist/${HOST_PLATFORM}/libOpenNI2.so
-  DESTINATION lib/
+  DESTINATION lib
   )
 
 install(DIRECTORY openni2_redist/${HOST_PLATFORM}/OpenNI2
-  DESTINATION lib/
+  DESTINATION lib
   )
 
 install(TARGETS list_devices_node
   clean_shm_node
   ${PROJECT_NAME}_node
-  DESTINATION lib/${PROJECT_NAME}/
+  DESTINATION lib/${PROJECT_NAME}
   )
 
 install(
@@ -241,7 +241,7 @@ install(
 
 install(DIRECTORY
   launch
-  DESTINATION share/${PROJECT_NAME}/
+  DESTINATION share/${PROJECT_NAME}
   )
 
 
